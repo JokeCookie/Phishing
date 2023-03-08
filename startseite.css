@@ -1,0 +1,57 @@
+body, html
+{
+    background-image: url("startseite-hintergrund.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #000;
+}
+
+.flex-container
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+.text
+{
+    font-family: 'Trebuchet MS';
+    font-size: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button
+{
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #FFFFFF;
+    background-color: #374BFA;
+}
+
+.ausrufezeichen
+{
+    width: 10%;
+    height: 10%;
+    animation-name: ausrufezeichen;
+    animation-duration: 0.2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ausrufezeichen
+{
+    from{opacity: 0;}
+    to  {opacity: 100;}
+}
+
