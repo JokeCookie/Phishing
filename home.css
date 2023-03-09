@@ -25,6 +25,22 @@ a {
     text-decoration: none;
 }
 
+.fusszeile {
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #0a0131;
+    justify-content: center;
+    justify-content: baseline;
+    font-family: 'Trebuchet MS';
+    font-size: 18px;
+    z-index: 101;
+    position: fixed;
+    color: white;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
