@@ -5,10 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <link rel="script" href="home.js">
     <title>Phishing Home</title>
 </head>
 
 <body>
+
+    <script type="text/javascript">
+        var alerted = sessionStorage.getItem('alerted') || '';
+        if (alerted != 'yes') {
+            alert('Das hätten Sie nicht tun sollen.\nLernen Sie auf unserer Webseite mehr zu Phishing und wie Sie sich davor schützen können.');
+            sessionStorage.setItem('alerted', 'yes');
+        }
+    </script>
 
     <br>
     <br>
