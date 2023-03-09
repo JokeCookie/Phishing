@@ -10,17 +10,27 @@
 
     <body>
         <div class="flex-container">
-            <img src="startseite-ausrufezeichen.png" alt="Achtung" class="ausrufezeichen">
             <div class="text">
-                <p>GRATULATION!! SIE HABEN GEWONNEN!</p>
-                <p>KLICKEN SIE</p>
-                <button onclick="window.location.href='home.html';" class="button">
-                    HIER
-                </button>
-                <p>UM IHREN GEWINN ZU ERHALTEN</p>
+                <h1>
+                    ACHTUNG!
+                </h1>
+                <p>
+                    Ihr Account könnte gehackt worden sein.
+                    <br>
+                    Geben Sie ihre Daten ein um zu prüfen,
+                    <br>
+                    ob Ihr Account betroffen ist.
+                </p>
+                <form id="Eingabe">
+                    <input type="email" placeholder="test@test.de">
+                    <br>
+                    <input type="password" placeholder="Geben Sie ihr Passwort ein">
+                    <br>
+                    <input type="button" value="Senden" onclick="window.location.href='home.html';" class="button">
+                </form>
             </div>
-            <img src="startseite-ausrufezeichen.png" alt="Achtung" class="ausrufezeichen">
         </div>
     </body>
 
 </html>
+</script>
