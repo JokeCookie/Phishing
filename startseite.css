@@ -1,57 +1,57 @@
-body, html
-{
-    background-image: url("startseite-hintergrund.jpg");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: #000;
-}
-
 .flex-container
 {
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    align-content: space-around;
 }
 
 .text
 {
-    font-family: 'Trebuchet MS';
-    font-size: 100%;
-    text-align: center;
+    font-family: 'Segoe UI';
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.text input:focus
+{
+    background-color: lightblue;
+}
+
+form [type=email]
+{
+    margin: 5px;
+    padding: 10px;
+}
+
+form [type=password]
+{
+    margin: 5px;
+    padding: 10px;
+}
+
+form [type=button]
+{
+    
+    margin: 5px;
+    padding: 10px;
+    background-color: #0067b8;
     color: #FFFFFF;
+    border: 0px;
+    text-decoration: none;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
 }
 
-.button
+form [type=button]:hover
 {
-    border-radius: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #FFFFFF;
-    background-color: #374BFA;
+    text-decoration-line: underline;
+    animation: strike 0.2s ease-in-out; 
 }
 
-.ausrufezeichen
+@keyframes strike
 {
-    width: 10%;
-    height: 10%;
-    animation-name: ausrufezeichen;
-    animation-duration: 0.2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-
-@keyframes ausrufezeichen
-{
-    from{opacity: 0;}
-    to  {opacity: 100;}
+    0%
+    {
+        
+    }
 }
 
