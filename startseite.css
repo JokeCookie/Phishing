@@ -2,6 +2,14 @@
 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.Foto
+{
+    width: 40%;
 }
 
 .text
@@ -44,14 +52,17 @@ form [type=button]
 form [type=button]:hover
 {
     text-decoration-line: underline;
-    animation: strike 0.2s ease-in-out; 
+    animation: strike 200ms ease-in-out alternate;
 }
 
 @keyframes strike
 {
-    0%
+    from
     {
-        
+        text-decoration-color: transparent ;
+    }
+    to
+    {
+        text-decoration-color: auto;
     }
 }
-
